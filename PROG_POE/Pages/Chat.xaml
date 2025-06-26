@@ -1,0 +1,27 @@
+﻿<Page x:Class="PROG_POE.Pages.Chat"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PROG_POE.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Chatbot">
+
+    <Grid>
+        <StackPanel Background="Lavender" VerticalAlignment="Stretch" Grid.Column="0">
+            <TextBlock Text="Chatbot" Foreground="BlueViolet" FontSize="40" FontWeight="Bold" 
+                       HorizontalAlignment="Center" Margin="0,20"/>
+
+            <TextBlock Text="Type here..." FontWeight="SemiBold" HorizontalAlignment="Stretch" Width="400" Margin="0,10,0,0"/>
+            <TextBox x:Name="ChatTextBox" HorizontalAlignment="Center" Width="400" Height="30"/>
+
+            <Button Content="Send" Margin="0,10,0,0" Width="400" Height="30" 
+                             Background="#007ACC" Foreground="White" BorderBrush="Transparent"
+                               Click="SendButton_Click"/>
+            <ListBox x:Name="ChatHistoryListBox" Margin="20" Width="600" Height="100" />
+
+        </StackPanel>
+
+    </Grid>
+</Page>
